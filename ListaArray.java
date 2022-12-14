@@ -28,7 +28,6 @@ public class ListaArray implements EstruturaDeDados {
                 elementos[i] = 0;
                 for (int j = i; j < contador - 1; j++) {
                     elementos[j] = elementos[j + 1];
-
                 }
                 contador -= 1;
                 return true;
@@ -43,7 +42,6 @@ public class ListaArray implements EstruturaDeDados {
             if (chave == elementos[i]) {
                 return true;
             }
-
         }
         return false;
     }
@@ -76,9 +74,7 @@ public class ListaArray implements EstruturaDeDados {
         for (int i = 0; i < elementos.length; i++) {
             if (chave == elementos[i]) {
                 a = elementos[i + 1];
-
             }
-
         }
         return a;
     }
@@ -89,7 +85,6 @@ public class ListaArray implements EstruturaDeDados {
         for (int i = 0; i < elementos.length; i++) {
             if (chave == elementos[i]) {
                 a = elementos[i - 1];
-
             }
         }
         return a;
@@ -107,8 +102,7 @@ public class ListaArray implements EstruturaDeDados {
 
         System.out.println(x.maximum());
         System.out.println(x.minimum());
-        System.out.println(x.sucessor(15));
+        System.out.println(x.sucessor(100));
         System.out.println(x.prodessor(30));
-
     }
 }
